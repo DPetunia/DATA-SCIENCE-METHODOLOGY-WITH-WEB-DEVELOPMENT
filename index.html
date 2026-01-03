@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="IMC11203 Assignment: Data Science Methodology with Web Development (CRISP-DM website)." />
+  <meta name="theme-color" content="#0b3b7a" />
+  <title>Home • CRISP-DM Methodology Site</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script defer src="scripts/main.js"></script>
+</head>
+
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap header-row">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="Go to Home">
+          <span class="brand-mark" aria-hidden="true">DS</span>
+          <span class="brand-text">
+            <span class="brand-title">CRISP-DM</span>
+            <span class="brand-subtitle">IMC11203 • Data Science Methodology</span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="top-nav" aria-label="Primary navigation">
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="navList">
+          Menu
+        </button>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="methodology.html" data-nav="methodology">Methodology</a></li>
+          <li><a href="case-study.html" data-nav="case-study">Case Study</a></li>
+          <li><a href="visuals.html" data-nav="visuals">Visuals</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="wrap breadcrumb-row" aria-label="Breadcrumb">
+      <nav class="breadcrumbs">
+        <span class="crumb" aria-current="page">Home</span>
+      </nav>
+
+      <div class="header-actions">
+        <button class="demo-toggle" type="button" data-demo-toggle>
+          Demo Mode: <span data-demo-label>Off</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap" role="main">
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Data Science Methodology Website (CRISP-DM)</h1>
+        <p class="lead">
+          This small website explains <strong>CRISP-DM</strong> (Cross-Industry Standard Process for Data Mining)
+          using a clear student voice, a full real-world walkthrough, and simple visuals.
+        </p>
+
+        <div class="callouts" data-demo-callout data-demo-only>
+          <p><strong>Demo tip:</strong> Turn on <em>Demo Mode</em> in the header to reveal guided callouts for your 10-minute presentation.</p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="methodology.html">Start with the Methodology</a>
+          <a class="btn" href="case-study.html">Jump to the Case Study</a>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="info-card">
+          <h2 class="h3">Why do we even use a methodology?</h2>
+          <p>
+            A data science methodology gives a <strong>structured workflow</strong> so we can move from raw data
+            to insights and deployable results, while staying organized, consistent, and iterative.
+          </p>
+          <ul class="tick">
+            <li><strong>Structured:</strong> clear phases and steps</li>
+            <li><strong>Iterative:</strong> loop back and refine</li>
+            <li><strong>Adaptable:</strong> fits different projects</li>
+          </ul>
+          <p class="note">
+            These ideas are summarized in the Week 8 notes under “Data Science Life Cycle”. (Paraphrased.) 
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid two">
+      <article class="card">
+        <h2>Universal lifecycle (big picture)</h2>
+        <p>
+          Different frameworks use different names, but they share the same “shape”:
+          <strong>Understand → Gather Data → Prepare → Model → Evaluate → Apply</strong>.
+        </p>
+        <p>
+          CRISP-DM matches this universal flow by adding strong focus on business goals and deployment,
+          which is why it’s often used in industry projects.
+        </p>
+
+        <div class="mini-flow" role="group" aria-label="Universal lifecycle flow">
+          <span class="pill">Understand</span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="pill">Gather</span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="pill">Prepare</span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="pill">Model</span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="pill">Evaluate</span>
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="pill">Apply</span>
+        </div>
+
+        <div class="callouts" data-demo-callout>
+          <p>
+            <strong>Demo line:</strong> “Even though names differ (OSEMN, KDD, CRISP-DM), they all follow the same core workflow.”
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Quick compare (CRISP-DM vs OSEMN vs KDD)</h2>
+        <p>
+          Based on the Week 8 comparison table, here’s the short version in my own words:
+        </p>
+
+        <div class="table-wrap" role="region" aria-label="Methodology comparison table" tabindex="0">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Main vibe</th>
+                <th>Best fit</th>
+                <th>Common limitation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CRISP-DM</td>
+                <td>Business-first, end-to-end</td>
+                <td>Industry deployments</td>
+                <td>Feels heavy for tiny projects</td>
+              </tr>
+              <tr>
+                <td>OSEMN</td>
+                <td>Hands-on coding workflow</td>
+                <td>EDA + student ML projects</td>
+                <td>No explicit business/deploy phase</td>
+              </tr>
+              <tr>
+                <td>KDD</td>
+                <td>Pattern discovery focus</td>
+                <td>Academic / mining large datasets</td>
+                <td>Less emphasis on business/deploy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="fineprint">
+          These points summarize commonly accepted differences between data science methodologies.
+        </p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Key Takeaways</h2>
+      <ul class="bullets">
+        <li><strong>Goal of a methodology:</strong> provide a structured workflow for data projects.</li>
+        <li><strong>OSEMN:</strong> Obtain, Scrub, Explore, Model, Notify.</li>
+        <li><strong>KDD focus:</strong> pattern discovery from data.</li>
+        <li><strong>Most widely used in industry:</strong> CRISP-DM for end-to-end projects.</li>
+        <li><strong>Common pattern across all:</strong> modeling and evaluation always appear.</li>
+      </ul>
+
+      <div class="callouts" data-demo-callout>
+        <p>
+          <strong>Demo tip:</strong> Mention 1–2 of these points to show you understand the lecture quiz content.
+        </p>
+      </div>
+    </section>
+
+    <section class="rubric-map" aria-label="Rubric Map" data-demo-only>
+      <h2 class="h3">Rubric Map (this page)</h2>
+      <ul class="rubric-tags">
+        <li>Understanding of Methodology</li>
+        <li>Design/UX & Visuals</li>
+        <li>Website Functionality & Technical Implementation</li>
+        <li>Ability to Perform Technical Demonstration</li>
+      </ul>
+      <p class="small">
+        This page introduces the problem-to-solution lifecycle, gives a quick compare of methodologies, and demonstrates navigation + Demo Mode.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer-row">
+      <p>© <span data-year></span> IMC11203 • Data Science Methodology Website</p>
+      <p><a href="about.html#references">References</a> • <a href="about.html#demo">Demo Script</a></p>
+    </div>
+  </footer>
+</body>
+</html>
