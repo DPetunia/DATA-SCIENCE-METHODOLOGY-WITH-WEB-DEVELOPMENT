@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 220" role="img" aria-labelledby="t d">
+  <title id="t">Shared Data Science Lifecycle Overview</title>
+  <desc id="d">
+    A simple forward workflow showing: Understand Problem, Understand Data,
+    Prepare Data, Model, Evaluate, and Apply Results.
+  </desc>
+
+  <defs>
+    <style>
+      .ink { fill: #0b3b7a; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      .card { fill: #f4f8ff; stroke: #0b3b7a; stroke-width: 2.5; }
+      .arrow { stroke: #0b3b7a; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+      .title { font-size: 18px; font-weight: 900; }
+      .label { font-size: 13.5px; font-weight: 800; }
+      .hint { font-size: 12.5px; font-weight: 600; opacity: .9; }
+    </style>
+
+    <marker id="arrowHead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#0b3b7a"/>
+    </marker>
+  </defs>
+
+  <!-- Heading -->
+  <text class="ink title" x="490" y="34" text-anchor="middle">
+    Shared Lifecycle (Across Methodologies)
+  </text>
+  <text class="ink hint" x="490" y="58" text-anchor="middle">
+    Most data science frameworks follow this flow, even if phase names differ.
+  </text>
+
+  <!-- Cards -->
+  <g>
+    <rect class="card" x="30" y="95" width="135" height="70" rx="14"/>
+    <text class="ink label" x="97.5" y="126" text-anchor="middle">Understand</text>
+    <text class="ink hint" x="97.5" y="148" text-anchor="middle">Problem</text>
+
+    <rect class="card" x="185" y="95" width="135" height="70" rx="14"/>
+    <text class="ink label" x="252.5" y="126" text-anchor="middle">Understand</text>
+    <text class="ink hint" x="252.5" y="148" text-anchor="middle">Data</text>
+
+    <rect class="card" x="340" y="95" width="135" height="70" rx="14"/>
+    <text class="ink label" x="407.5" y="126" text-anchor="middle">Prepare</text>
+    <text class="ink hint" x="407.5" y="148" text-anchor="middle">Data</text>
+
+    <rect class="card" x="495" y="95" width="135" height="70" rx="14"/>
+    <text class="ink label" x="562.5" y="126" text-anchor="middle">Model</text>
+    <text class="ink hint" x="562.5" y="148" text-anchor="middle">&amp; Tune</text>
+
+    <rect class="card" x="650" y="95" width="135" height="70" rx="14"/>
+    <text class="ink label" x="717.5" y="126" text-anchor="middle">Evaluate</text>
+    <text class="ink hint" x="717.5" y="148" text-anchor="middle">Results</text>
+
+    <rect class="card" x="805" y="95" width="145" height="70" rx="14"/>
+    <text class="ink label" x="877.5" y="134" text-anchor="middle">Apply Results</text>
+  </g>
+
+  <!-- Arrows -->
+  <path class="arrow" marker-end="url(#arrowHead)" d="M165,130 L185,130"/>
+  <path class="arrow" marker-end="url(#arrowHead)" d="M320,130 L340,130"/>
+  <path class="arrow" marker-end="url(#arrowHead)" d="M475,130 L495,130"/>
+  <path class="arrow" marker-end="url(#arrowHead)" d="M630,130 L650,130"/>
+  <path class="arrow" marker-end="url(#arrowHead)" d="M785,130 L805,130"/>
+</svg>
